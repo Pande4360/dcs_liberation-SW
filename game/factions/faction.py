@@ -359,6 +359,28 @@ class Faction:
             self.remove_vehicle("SAM SA-14 Strela-3 manpad")
             self.remove_vehicle("SAM SA-24 Igla-S manpad")
             self.remove_vehicle("Polyana-D4M1 C2 node")
+        # SWPack
+        if not mod_settings.SWPack:
+            self.remove_aircraft("AWING")
+            self.remove_aircraft("XWING")
+            self.remove_aircraft("tie_bomber_2")
+            self.remove_aircraft("YWING")
+            self.remove_aircraft("CORVETTE")
+            self.remove_aircraft("FAUCON")
+            self.remove_aircraft("TIE")
+            self.remove_aircraft("HUNTER")
+            self.remove_aircraft("TIE_INTER")
+            self.remove_aircraft("naboo_starfighter")
+            self.remove_aircraft("naboo_starfighter_AI")
+            self.remove_vehicle("MBT9_REBEL")
+            self.remove_vehicle("MBT9_AAA EMPIRE")
+            self.remove_vehicle("MBT9_EMPIRE")
+            self.remove_vehicle("MBT9_AAA REBEL")
+            self.remove_vehicle("Jugger")
+            self.remove_vehicle("TB_TT")
+            self.remove_vehicle("TR_TT")
+            self.remove_vehicle("Gozanti")
+            self.remove_ship("Destroyer_carrier")
 
     def remove_aircraft(self, name: str) -> None:
         for i in self.aircrafts:
